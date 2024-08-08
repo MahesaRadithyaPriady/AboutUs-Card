@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArrayAsocc</title>
+  </head>
+  <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        .container {
+          min-width: 100%;
+          min-height: 100%;
+        }
+
+        .about-card {
+          background-color: rgb(245, 245, 245);
+          max-width: 550px;
+          border-radius: 10px;
+          padding: 10px;
+          margin-left: 35%;
+          margin-top: 10%;
+          box-shadow: 1px 1px 1px;
+          animation: about-card-animation 1s ease-in-out;
+        }
+        @keyframes about-card-animation {
+      from {
+      margin-top: -20%;
+      }
+      to {
+       margin-top: 10%;
+      }
+
+    }
+
+    @keyframes about-card-animation-mobile {
+      from {
+      margin-top: -60%;
+      }
+      to {
+       margin-top: 35%;
+      }
+    }
+        .about-card:hover{
+            box-shadow: 5px 5px 10px;
+            transform: scale(1);
+
+          }
+        
+        .foto-profil {
+          position: relative;
+          width: 10rem;
+          border-radius: 50%;
+          left: 12rem;
+          top: 1rem;
+        }
+
+        .title {
+          text-align: center;
+          margin-top: 2rem;
+          margin-bottom: 1rem;
+        }
+        .text {
+          text-align: justify;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          font-size: large;
+        }
+        .end-copyright {
+          text-align: center;
+          margin-top: 1rem;
+        }
+        @media only screen and (max-width: 750px) {
+          .about-card {
+            background-color: rgb(245, 245, 245);
+            max-width: 550px;
+            position: relative;
+            border-radius: 10px;
+            padding: 10px;
+            margin-left: 35%;
+            margin-top: 10%;
+            box-shadow: 1px 1px 1px;
+          }
+
+          .foto-profil {
+            width: 10rem;
+            position: relative;
+            border-radius: 50%;
+            left: 10rem;
+            top: 1rem;
+          }
+        }
+
+        @media only screen and (max-width: 620px) {
+          .about-card {
+            position: relative;
+            right: 13%;
+            margin-right: 10%;
+            margin-top: 35%;
+            animation: about-card-animation-mobile 1s ease-in-out;
+          }
+          .foto-profil {
+            width: 10rem;
+            border-radius: 50%;
+            left: 3rem;
+            top: 1rem;
+          }
+        }
+  </style>
+  <body>
+    <div class="container">
+      <div class="about-card">
+        <img src="foto-profil.jpg" alt="" class="foto-profil" />
+        <h1 class="title" id="title-about">About Us</h1>
+        <hr />
+        <p class="text" id="Nama">Nama : Mahesa Radithya Priady</p>
+        <p class="text" id="Umur">Umur : 16</p>
+        <p class="text" id="Kelas">Kelas : XI PPLG 4</p>
+        <p class="text" id="Hobby">Hobby : Ngoding</p>
+        <footer class="end-copyright">&copy Copyright 2024 Mahesa Radithya P</footer>
+      </div>
+    </div>
+  </body>
+</html>
